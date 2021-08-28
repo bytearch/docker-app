@@ -1,0 +1,7 @@
+mysql/data/
+rocketmq/rmq/logs/
+rocketmq/rmq/store/
+rocketmq/rmqs/
+zookeeper/zoo1/
+zookeeper/zoo2/
+zookeeper/zoo3/
