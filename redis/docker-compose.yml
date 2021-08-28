@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  redis:
+    image: redis
+    restart: always
+    hostname: redis
+    container_name: redis
+    command: redis-server /usr/local/etc/redis/redis.conf
+    ports:
+      - 6379:6379
+    volumes:
+      - ./data:/data
+      - ./conf/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+        default:
+          ipv4_address: 172.30.1.9
+networks:
+   default:
+    external:
+      name: app-network
