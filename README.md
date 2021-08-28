@@ -8,16 +8,15 @@ Subnet=172.30.1.0/24
 
 Gateway: 172.30.1.1   
 
-|app| ip |
-|：---:|:---:|
-|Mysql | 172.30.1.2 |
-|RocketMq-namesrv | 172.30.1.3 | 
-|RocketMq-broker | 172.30.1.4 |
-|Rocketmq-console | 172.30.1.5|
-|zookeeper|172.30.1.6,172.30.1.7,172.30.1.8|
-|Redis|172.30.1.9|
-|Nacos|172.30.1.10|
-
+| app              | ip                               |
+| ---------------- | -------------------------------- |
+| Mysql            | 172.30.1.2                       |
+| RocketMq-namesrv | 172.30.1.3                       |
+| RocketMq-broker  | 172.30.1.4                       |
+| Rocketmq-console | 172.30.1.5                       |
+| Zookeeper        | 172.30.1.6,172.30.1.7,172.30.1.8 |
+| Redis            | 172.30.1.9                       |
+| Nacos            | 172.30.1.10                      |
 Other software services will be supplemented in succession
 
 ### 2. Install
