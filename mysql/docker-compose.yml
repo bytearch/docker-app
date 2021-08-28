@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  db:
+    image: hub.c.163.com/library/mysql:5.7
+    restart: always
+    container_name: "mysql_5_7"
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: root
+    #command:
+    volumes:
+      - ./conf.d:/etc/mysql/mysql.conf.d
+      - ./data:/var/lib/mysql
+    networks:
+        default:
+          ipv4_address: 172.30.1.2
+networks:
+   default:
+    external:
+      name: app-network
