@@ -493,3 +493,97 @@
 2021-08-28 14:42:23 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
 2021-08-28 14:42:24 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
 2021-08-28 14:42:25 INFO brokerOutApi_thread_1 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:42:33 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:34 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:43 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:44 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:53 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:54 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:42:55 INFO brokerOutApi_thread_2 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:43:00 ERROR AdminBrokerThread_4 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:00 ERROR AdminBrokerThread_4 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/consumequeue
+2021-08-28 14:43:03 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:04 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:13 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:14 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:22 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-08-28 14:43:22 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-08-28 14:43:23 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:24 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:25 INFO brokerOutApi_thread_3 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:43:33 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:34 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:43 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:44 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:53 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:54 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:43:55 INFO brokerOutApi_thread_4 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:44:00 ERROR AdminBrokerThread_14 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:00 ERROR AdminBrokerThread_14 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/consumequeue
+2021-08-28 14:44:03 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:04 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:13 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:14 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:22 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-08-28 14:44:22 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-08-28 14:44:23 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:24 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:25 INFO brokerOutApi_thread_1 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:44:33 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:34 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:43 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:44 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:53 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:54 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:44:55 INFO brokerOutApi_thread_2 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:45:00 ERROR AdminBrokerThread_8 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:00 ERROR AdminBrokerThread_8 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/consumequeue
+2021-08-28 14:45:03 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:04 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:13 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:14 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:22 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-08-28 14:45:22 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-08-28 14:45:23 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:24 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:25 INFO brokerOutApi_thread_3 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:45:33 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:34 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:43 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:44 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:53 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:54 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:45:55 INFO brokerOutApi_thread_4 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:46:00 ERROR AdminBrokerThread_2 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:00 ERROR AdminBrokerThread_2 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/consumequeue
+2021-08-28 14:46:03 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:04 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:12 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:13 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:22 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-08-28 14:46:22 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-08-28 14:46:22 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:23 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:25 INFO brokerOutApi_thread_1 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:46:32 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:33 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:42 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:43 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:52 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:53 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:46:55 INFO brokerOutApi_thread_2 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:47:00 ERROR AdminBrokerThread_12 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:00 ERROR AdminBrokerThread_12 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/consumequeue
+2021-08-28 14:47:02 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:03 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:12 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:13 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:22 INFO BrokerControllerScheduledThread1 - dispatch behind commit log 0 bytes
+2021-08-28 14:47:22 INFO BrokerControllerScheduledThread1 - Slave fall behind master: 0 bytes
+2021-08-28 14:47:22 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:23 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:25 INFO brokerOutApi_thread_3 - register broker[0]to name server rmqnamesrv:9876 OK
+2021-08-28 14:47:32 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:33 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:42 ERROR StoreScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog
+2021-08-28 14:47:43 ERROR DiskCheckScheduledThread1 - Error when measuring disk space usage, file doesn't exist on this path: /home/rocketmq/store/commitlog

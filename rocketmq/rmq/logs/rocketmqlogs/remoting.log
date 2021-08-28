@@ -190,3 +190,55 @@
 2021-08-28 14:42:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38650]
 2021-08-28 14:42:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38650]
 2021-08-28 14:42:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38650]
+2021-08-28 14:42:29 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38656
+2021-08-28 14:42:29 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38656]
+2021-08-28 14:42:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38656]
+2021-08-28 14:42:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38656]
+2021-08-28 14:42:59 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38660
+2021-08-28 14:42:59 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38660]
+2021-08-28 14:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38660]
+2021-08-28 14:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38660]
+2021-08-28 14:43:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38662
+2021-08-28 14:43:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38662]
+2021-08-28 14:43:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38662]
+2021-08-28 14:43:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38662]
+2021-08-28 14:43:29 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38668
+2021-08-28 14:43:29 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38668]
+2021-08-28 14:43:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38668]
+2021-08-28 14:43:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38668]
+2021-08-28 14:44:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38672
+2021-08-28 14:44:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38672]
+2021-08-28 14:44:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38672]
+2021-08-28 14:44:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38672]
+2021-08-28 14:44:29 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38686
+2021-08-28 14:44:29 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38686]
+2021-08-28 14:44:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38686]
+2021-08-28 14:44:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38686]
+2021-08-28 14:44:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38690
+2021-08-28 14:44:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38690]
+2021-08-28 14:44:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38690]
+2021-08-28 14:44:59 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38690]
+2021-08-28 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38692
+2021-08-28 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38692]
+2021-08-28 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38692]
+2021-08-28 14:45:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38692]
+2021-08-28 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38698
+2021-08-28 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38698]
+2021-08-28 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38698]
+2021-08-28 14:45:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38698]
+2021-08-28 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38702
+2021-08-28 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38702]
+2021-08-28 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38702]
+2021-08-28 14:46:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38702]
+2021-08-28 14:46:29 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38708
+2021-08-28 14:46:29 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38708]
+2021-08-28 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38708]
+2021-08-28 14:46:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38708]
+2021-08-28 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38712
+2021-08-28 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38712]
+2021-08-28 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38712]
+2021-08-28 14:47:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38712]
+2021-08-28 14:47:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 172.30.1.5:38718
+2021-08-28 14:47:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[172.30.1.5:38718]
+2021-08-28 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[172.30.1.5:38718]
+2021-08-28 14:47:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[172.30.1.5:38718]
