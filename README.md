@@ -22,13 +22,13 @@ Other software services will be supplemented in succession
 ### 2. Install
 
 
-##### 1. create network
+##### 1). create network
 ```shell
 sh ./intall_network.sh
 
 ```
 
-##### 2. start docker app
+##### 2). start docker app
 
  start all docker app
 
@@ -45,7 +45,7 @@ sh start.sh
 
 ```
 
-##### 3. stop docker app
+##### 3). stop docker app
 
  stop all docker app
  ```shell
