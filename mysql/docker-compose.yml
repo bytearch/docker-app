@@ -4,7 +4,6 @@ services:
     image: hub.c.163.com/library/mysql:5.7
     restart: always
     container_name: "mysql_5_7"
-    restart: always
     ports:
       - 3306:3306
     environment:

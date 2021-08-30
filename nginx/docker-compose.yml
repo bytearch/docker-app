@@ -10,8 +10,8 @@ services:
        - ./conf/conf.d:/etc/nginx/conf.d
        - ./logs:/var/log/nginx
        - ./www:/www
-    ports:
-      - "8088:80"
+    #ports:
+    #  - "8088:80"
     environment:
       - NGINX_PORT=80
     networks:

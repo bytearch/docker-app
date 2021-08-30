@@ -17,6 +17,9 @@ Gateway: 172.30.1.1
 | Zookeeper        | 172.30.1.6,172.30.1.7,172.30.1.8 |
 | Redis            | 172.30.1.9                       |
 | Nacos            | 172.30.1.10                      |
+| Nginx            | 172.30.1.11                      |
+| Elasticsearch    | 172.30.1.12                      |
+
 Other software services will be supplemented in succession
 
 ### 2. Install
