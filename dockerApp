@@ -1,0 +1,105 @@
+#!/usr/bin/env bash
+
+start_app(){
+   if test -d $1 ; then
+		echo "start....$1" 
+		cd $1
+		if [ ! -f "./start.sh" ];
+		then
+			echo "{$1} not exists start.sh , do nothing!!"
+		else 
+		    sh ./start.sh
+
+		fi	
+		cd -
+		echo "start complete...[$dir]"
+    fi 
+
+}
+
+stop_app(){
+	if test -d $1 ; then
+		echo "stop....$1" 
+		cd $1
+		if [ ! -f "./stop.sh" ];
+		then
+			echo "{$1} not exists stop.sh , do nothing!!"
+		else 
+		    sh ./stop.sh
+
+		fi	
+		cd -
+		echo "stop complete...[$dir]"
+    fi 
+}
+
+main(){
+	echo "Begin $1 docker_app [$apps]"
+	apps_arr=(${apps//,/ })
+	app_num=${#apps_arr[@]}
+	for ((j=0; j<$app_num; j++)) {
+		case $operate in
+			start)
+		        	start_app ${apps_arr[$j]} $j
+				;;
+			stop)
+				stop_app  ${apps_arr[$j]} $j
+		        	stop_app ${servers_arr[$j]} $j
+				;;
+			 
+			 ?)
+				echo "`InvalidCommandSyntaxExit`"
+                        	exit 1
+                        	;;
+		esac
+        }
+}
+
+#printUsage()
+PrintUsage()
+{
+	cat << EndOfUsageMessage
+
+Usage: $0  -o OPERATOR  -n APP_NAME
+
+OPERATOR:
+	start 	Start one or more stopped docker app
+	stop    Stop one  or more running docker app
+
+APP_NAME: Docker app name, Multiple commas separated, Current support mysql,redis,zookeeper,rocketmq etc
+	Example	1. docker_app  start  mysql,redis
+	Example	2. docker_app  stop   mysql,redis
+
+
+EndOfUsageMessage
+}
+
+InvalidCommandSyntaxExit()
+{
+        echo "Invalid command\n`PrintUsage`"
+        exit;
+}
+
+if [ $# -eq 0 ]
+then
+	echo "`PrintUsage`"
+	exit 1
+fi
+
+while getopts "o:n:" arg
+do
+	case $arg in
+		o)
+			operate=$OPTARG
+	                ;;
+		n)  apps=$OPTARG
+			        ;;
+	
+		?)
+            echo "`InvalidCommandSyntaxExit`"
+        	exit 1
+        		;;
+
+	esac
+done
+main

@@ -6,3 +6,4 @@ zookeeper/zoo1/
 zookeeper/zoo2/
 zookeeper/zoo3/
 redis/data
+nginx/logs
