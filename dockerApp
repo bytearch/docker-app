@@ -67,8 +67,8 @@ OPERATOR:
 	stop    Stop one  or more running docker app
 
 APP_NAME: Docker app name, Multiple commas separated, Current support mysql,redis,zookeeper,rocketmq etc
-	Example	1. docker_app  start  mysql,redis
-	Example	2. docker_app  stop   mysql,redis
+	Example	1. docker_app -o start -n mysql,redis
+	Example	2. docker_app -o stop  -n  mysql,redis
 
 
 EndOfUsageMessage
