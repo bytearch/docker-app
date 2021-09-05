@@ -1,0 +1,19 @@
+[mysqld]
+# 1.禁止域名解析
+skip-host-cache
+
+# 2.禁用dns解析，但是，这样不能在mysql的授权表中使用主机名了，只能使用IP。
+skip-name-resolve
+
+# 数据库编号, 要具有唯一性, 不能跟其他数据库重复, 方便同步区分
+server-id = 31
+
+# mysql日志
+log-bin=/var/lib/mysql/mysql-bin.log
+
+# 中继日志：存储所有主库TP过来的binlog事件主库binlog：记录主库发生过的修改事件
+relay-log =/var/lib/mysql/mysql-relay-bin.log
+
+
+# binlog日志格式，mysql默认采用statement，建议使用 mixed(是statement和row模式的结合)
+binlog_format = mixed
