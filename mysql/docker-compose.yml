@@ -9,9 +9,11 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: root
-    #command:
+    command:
+      --character-set-server=utf8mb4 
+      --collation-server=utf8mb4_unicode_ci
     volumes:
-      - ./conf.d:/etc/mysql/mysql.conf.d
+      - ./conf.d:/etc/mysql/conf.d
       - ./data:/var/lib/mysql
     networks:
         default:
