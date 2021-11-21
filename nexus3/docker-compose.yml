@@ -1,0 +1,21 @@
+version: '3.5'
+services:
+   nexus:
+      image: sonatype/nexus3
+      container_name: "nexus3"
+      hostname: "mvn.fdfs.site"
+      restart:
+        always
+      volumes: 
+        - ./data:/var/nexus-data
+      environment:
+        TZ: Asia/Shanghai
+      ports:
+        - "8081"
+      networks:
+        default:
+          ipv4_address: 172.30.1.51
+networks:
+   default:
+    external:
+      name: app-network
