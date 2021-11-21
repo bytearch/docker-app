@@ -4,6 +4,7 @@ services:
     image: gitlab/gitlab-ce:12.7.6-ce.0
     restart: always
     container_name: "gitlab"
+    hostname: "git.fdfs.site"
     expose:
       - "443"
       - "80"
