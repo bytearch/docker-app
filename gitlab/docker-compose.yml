@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:12.7.6-ce.0
+    restart: always
+    container_name: "gitlab"
+    expose:
+      - "443"
+      - "80"
+      - "22"
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      -  ./config:/etc/gitlab
+      -  ./logs:/var/log/gitlab
+      -  ./data:/var/opt/gitlab
+    networks:
+        default:
+          ipv4_address: 172.30.1.50
+networks:
+   default:
+    external:
+      name: app-network

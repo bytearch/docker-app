@@ -20,6 +20,7 @@ Gateway: 172.30.1.1
 | Nginx            | 172.30.1.11                      |
 | Elasticsearch    | 172.30.1.12                      |
 | Mysql-Cluster    | 172.30.1.21 ~ 172.30.1.40        |
+| Gitlab           | 172.30.1.50                      |
 
 Other software services will be supplemented in succession
 
