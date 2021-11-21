@@ -11,7 +11,7 @@ services:
       environment:
         TZ: Asia/Shanghai
       ports:
-        - "8081"
+        - 8081:8081
       networks:
         default:
           ipv4_address: 172.30.1.51

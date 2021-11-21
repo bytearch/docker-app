@@ -10,11 +10,7 @@ services:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: root
     command:
-<<<<<<< HEAD
       --character-set-server=utf8mb4 
-=======
-      --character-set-server=utf8mb4
->>>>>>> 4696b67416c6e053d235c8de334316a1b58f88a4
       --collation-server=utf8mb4_unicode_ci
     volumes:
       - ./conf.d:/etc/mysql/conf.d
