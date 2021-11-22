@@ -1,0 +1,46 @@
+version: '3.5'
+services:
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
+    restart: always
+    container_name: "elasticsearch"
+    hostname: elasticsearch
+    ports:
+       - 9200:9200
+       - 9300:9300
+    environment:
+      - discovery.type=single-node
+    networks:
+        default:
+          ipv4_address: 172.30.1.52
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.7.0
+    container_name: "kibana7"
+    hostname: kibana
+    environment:
+      - elasticsearch.hosts=http://elasticsearch:9200
+    depends_on:
+      - es
+    restart: always
+    ports:
+      - 5601:5601
+    networks:
+        default:
+          ipv4_address: 172.30.1.53
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.7.0
+    container_name: "logstash7"
+    hostname: logstash
+    restart: always
+    depends_on:
+      - es
+    ports:
+      - 9600:9600
+      - 5044:5044
+    networks:
+        default:
+          ipv4_address: 172.30.1.54
+networks:
+   default:
+    external:
+      name: app-network
