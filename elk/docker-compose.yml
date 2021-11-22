@@ -1,39 +1,59 @@
 version: '3.5'
 services:
   es:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
     restart: always
-    container_name: "elasticsearch"
+    container_name: elasticsearch
     hostname: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms2048M -Xmx2048M"
+      - http.cors.enabled=true
+      - http.cors.allow-origin=*
+    ulimits:
+      nproc: 65535
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - type: volume
+        source: logs
+        target: /var/log
+      - type: volume
+        source: esdata
+        target: /usr/share/elasticsearch/data
     ports:
        - 9200:9200
        - 9300:9300
-    environment:
-      - discovery.type=single-node
-    volumes:
-      - ./data/es/config:/usr/share/elasticsearch/config
-      - ./data/es/plugins://usr/share/elasticsearch/plugins
     networks:
         default:
           ipv4_address: 172.30.1.52
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.7.0
-    container_name: "kibana"
+    image: docker.elastic.co/kibana/kibana:7.8.0
+    container_name: kibana
     hostname: kibana
     environment:
-      - elasticsearch.hosts=http://elasticsearch:9200
+      SERVER_NAME: localhost
+      ELASTICSEARCH_URL: http://elasticsearch:9200/
     depends_on:
       - es
     restart: always
     ports:
       - 5601:5601
     volumes:
-      - ./data/kibana/config:/usr/share/kibana/config
+      - type: volume
+        source: logs
+        target: /var/log
+    ulimits:
+      nproc: 65535
+      memlock:
+        soft: -1
+        hard: -1
     networks:
         default:
           ipv4_address: 172.30.1.53
   logstash:
-    image: docker.elastic.co/logstash/logstash:7.7.0
+    image: docker.elastic.co/logstash/logstash:7.8.0
     container_name: "logstash"
     hostname: logstash
     restart: always
@@ -42,8 +62,6 @@ services:
     ports:
       - 9600:9600
       - 5044:5044
-    volumes:
-      - ./data/logstash/config:/usr/share/logstash/config
     networks:
         default:
           ipv4_address: 172.30.1.54
@@ -51,3 +69,6 @@ networks:
    default:
     external:
       name: app-network
+volumes:
+  esdata:
+  logs:
