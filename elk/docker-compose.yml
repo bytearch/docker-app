@@ -7,7 +7,7 @@ services:
     hostname: elasticsearch
     environment:
       - discovery.type=single-node
-      - "ES_JAVA_OPTS=-Xms2048M -Xmx2048M"
+      - "ES_JAVA_OPTS=-Xms1024M -Xmx1024M"
       - http.cors.enabled=true
       - http.cors.allow-origin=*
     ulimits:
