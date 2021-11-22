@@ -10,12 +10,15 @@ services:
        - 9300:9300
     environment:
       - discovery.type=single-node
+    volumes:
+      - ./data/es/config:/usr/share/elasticsearch/config
+      - ./data/es/plugins://usr/share/elasticsearch/plugins
     networks:
         default:
           ipv4_address: 172.30.1.52
   kibana:
     image: docker.elastic.co/kibana/kibana:7.7.0
-    container_name: "kibana7"
+    container_name: "kibana"
     hostname: kibana
     environment:
       - elasticsearch.hosts=http://elasticsearch:9200
@@ -24,12 +27,14 @@ services:
     restart: always
     ports:
       - 5601:5601
+    volumes:
+      - ./data/kibana/config:/usr/share/kibana/config
     networks:
         default:
           ipv4_address: 172.30.1.53
   logstash:
     image: docker.elastic.co/logstash/logstash:7.7.0
-    container_name: "logstash7"
+    container_name: "logstash"
     hostname: logstash
     restart: always
     depends_on:
@@ -37,6 +42,8 @@ services:
     ports:
       - 9600:9600
       - 5044:5044
+    volumes:
+      - ./data/logstash/config:/usr/share/logstash/config
     networks:
         default:
           ipv4_address: 172.30.1.54
