@@ -5,9 +5,9 @@ services:
     restart: always
     container_name: "elasticsearch"
     hostname: elasticsearch
-    # ports:
-    #   - 9200:9200
-    #   - 9300:9300
+    ports:
+       - 9200:9200
+       - 9300:9300
     environment:
       - discovery.type=single-node
     #command:
