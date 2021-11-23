@@ -23,6 +23,7 @@ Gateway: 172.30.1.1
 | Gitlab           | 172.30.1.50                      | Gitlab                |
 | Nexus3           | 172.30.1.51                      | Maven私服               |
 | ELK              | 172.30.1.52 ~ 172.30.1.54| ES + Kibana+Logstash |
+| Prometheus       | 172.30.1.55                      |                       |
 
 Other software services will be supplemented in succession
 
