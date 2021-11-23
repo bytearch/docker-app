@@ -1,0 +1,18 @@
+version: '3.5'
+services:
+  prometheus:
+    image: hub.fdfs.site/public/prometheus:v2.29.2
+    container_name: prometheus
+    hostname: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./etc/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+        default:
+          ipv4_address: 172.30.1.55
+networks:
+   default:
+    external:
+      name: app-network
+    
