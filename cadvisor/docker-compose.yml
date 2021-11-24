@@ -13,7 +13,7 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
       - /dev/disk/:/dev/disk:ro
-  networks:
+    networks:
         default:
           ipv4_address: 172.30.1.56
 networks:
