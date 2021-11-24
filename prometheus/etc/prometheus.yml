@@ -27,3 +27,6 @@ scrape_configs:
 
     static_configs:
       - targets: ["localhost:9090"]
+  - job_name: "docker"
+    static_configs:
+      - targets: ["172.30.1.56:8080"]
