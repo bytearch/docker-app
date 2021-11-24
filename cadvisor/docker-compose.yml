@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  casdvisor:
+    image: google/cadvisor:v0.31.0
+    restart: always
+    container_name: cadvisor
+    hostname: cadvisor
+    ports:
+      - 8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+  networks:
+        default:
+          ipv4_address: 172.30.1.56
+networks:
+   default:
+    external:
+      name: app-network
