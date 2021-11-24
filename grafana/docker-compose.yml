@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+   grafana:
+      image: grafana/grafana:8.2.5
+      container_name: grafana
+      hostname: grafana
+      restart: always
+      ports:
+        - 3000:3000
+      networks:
+        default:
+          ipv4_address: 172.30.1.57
+networks:
+   default:
+    external:
+      name: app-network
