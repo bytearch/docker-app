@@ -15,13 +15,8 @@ services:
           memlock:
             soft: -1
             hard: -1
-        volumes:
-          - type: volume
-            source: logs
-            target: /var/log
-          - type: volume
-            source: esdata
-            target: /usr/share/elasticsearch/data
+        #volumes:
+      
         ports:
          - 9200:9200
          - 9300:9300
