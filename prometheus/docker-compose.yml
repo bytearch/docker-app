@@ -15,4 +15,4 @@ networks:
    default:
     external:
       name: app-network
-    
+  
