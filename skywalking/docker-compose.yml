@@ -30,7 +30,7 @@ services:
         image: apache/skywalking-ui:8.7.0 
         container_name: ui 
         depends_on: 
-          oap:
+         - oap:
             condition: service_healthy 
         links: 
           - oap 
