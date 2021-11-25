@@ -26,6 +26,7 @@ Gateway: 172.30.1.1
 | Prometheus       | 172.30.1.55                      |                       |
 | Cadvisor | 172.30.1.56 | Docker服务监控数据采集 |
 | Grafana | 172.30.1.57 | 监控展示 |
+| Skywalking       | server: 172.30.1.58    web: 172.30.1.59               |             链路追踪          |
 
 Other software services will be supplemented in succession
 
