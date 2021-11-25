@@ -1,12 +1,40 @@
 version: '3.5'
 services:
-      oap:
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+        restart: always
+        container_name: elasticsearch
+        hostname: elasticsearch
+        environment:
+          - discovery.type=single-node
+          - "ES_JAVA_OPTS=-Xms2048M -Xmx2048M"
+          - http.cors.enabled=true
+          - http.cors.allow-origin=*
+        ulimits:
+          nproc: 65535
+          memlock:
+            soft: -1
+            hard: -1
+        volumes:
+          - type: volume
+            source: logs
+            target: /var/log
+          - type: volume
+            source: esdata
+            target: /usr/share/elasticsearch/data
+        ports:
+         - 9200:9200
+         - 9300:9300
+        networks:
+          default:
+            ipv4_address: 172.30.1.60
+    oap:
         image: apache/skywalking-oap-server:8.7.0-es7 
         container_name: oap 
-        #depends_on:
-        #   - elasticsearch 
-        #links: 
-        #   - elasticsearch 
+        depends_on:
+           - elasticsearch 
+        links: 
+           - elasticsearch 
         restart: always 
         ports: 
           - 11800:11800
@@ -26,7 +54,7 @@ services:
         networks:
          default:
           ipv4_address: 172.30.1.58
-      ui:
+    ui:
         image: apache/skywalking-ui:8.7.0 
         container_name: ui 
         depends_on: 
