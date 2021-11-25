@@ -30,3 +30,9 @@ scrape_configs:
   - job_name: "docker"
     static_configs:
       - targets: ["172.30.1.56:8080"]
+  - job_name: "docker"
+    static_configs:
+      - targets: ["172.30.1.56:8080"]
+  - job_name: "docker_ECS2"
+    static_configs:
+      - targets: ["8.142.122.54:9080"]
