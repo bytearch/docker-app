@@ -44,7 +44,7 @@ services:
           SW_STORAGE: elasticsearch7 # 指定ES版本 
           SW_STORAGE_ES_CLUSTER_NODES: elasticsearch:9200 
           SW_HEALTH_CHECKER: default
-          SW_TELEMETRY: prometheus
+          #SW_TELEMETRY: prometheus
           TZ: Asia/Shanghai
         networks:
          default:
