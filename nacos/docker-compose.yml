@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+  nacos:
+   image: nacos/nacos-server:v2.0.3
+   container_name: nacos
+   hostname: nacos
+   env_file:
+      - ./env/nacos-standlone-mysql.env
+   volumes:
+      - ./standalone-logs/:/home/nacos/logs
+      - ./init.d/custom.properties:/home/nacos/init.d/custom.properties
+   ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9555:9555"
+   restart: always
+   networks:
+        default:
+          ipv4_address: 172.30.1.10
+networks:
+   default:
+    external:
+      name: app-network
+  
