@@ -1,6 +1,10 @@
 # docker-app
+
 Common docker software, such as mysql, redis, rocketmq, etc., are convenient for normal testing without a lot of environment construction
 
+# 文章说明
+
+[浅谈工作中常用应用软件本地docker化，一键部署它不香吗？](https://mp.weixin.qq.com/s?__biz=MzU5NTg1ODg2MQ==&mid=2247484089&idx=1&sn=a61f8c0e7d821375f3a8e95d5449f360&chksm=fe6ac67bc91d4f6d14c1806eebd6f37ea98d2052f09c2c4579070a1eb9d0761fb6bebf84c73e&token=193383604&lang=zh_CN#rd)
 
 ### 1. Host planning
 
