@@ -1,0 +1,4 @@
+2021-12-02 08:57:57,424 INFO Current addressing mode selection : StandaloneMemberLookup
+
+2021-12-02 08:57:57,427 WARN [serverlist] updated to : [Member{ip='nacos_standlone', port=8848, state=UP, extendInfo={raftPort=7848, version=2.0.3}}]
+
