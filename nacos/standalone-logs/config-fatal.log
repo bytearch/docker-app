@@ -1,4 +1,4 @@
-2021-12-02 08:57:51,881 WARN [master-db] master db access error
+2022-01-11 22:31:40,329 WARN [master-db] master db access error
 
 org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82)
@@ -100,13 +100,13 @@ org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilter(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilter(<generated>)
 	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.CGLIB$authFilterRegistration$1(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70$$FastClassBySpringCGLIB$$1214322e.invoke(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.CGLIB$authFilterRegistration$0(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03$$FastClassBySpringCGLIB$$498b5f79.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilterRegistration(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilterRegistration(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,12 +215,12 @@ Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'nacos_config'
 	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
 	... 186 common frames omitted
-2021-12-02 08:57:51,885 ERROR [master-db] master db not found.
+2022-01-11 22:31:40,336 ERROR [master-db] master db not found.
 
-2021-12-02 08:57:56,925 ERROR [db-error] master db 172.30.1.2 down.
+2022-01-11 22:31:45,370 ERROR [db-error] master db 172.30.1.2 down.
 
-2021-12-02 08:57:58,357 WARN isQuickStart:false
+2022-01-11 22:31:46,763 WARN isQuickStart:false
 
-2021-12-02 08:57:58,365 ERROR Nacos Server did not start because dumpservice bean construction failure :
+2022-01-11 22:31:46,770 ERROR Nacos Server did not start because dumpservice bean construction failure :
 java.lang.IllegalStateException: No DataSource set
 

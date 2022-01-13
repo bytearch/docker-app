@@ -1,34 +1,26 @@
-2021-12-02 08:56:26,855 INFO Starting Nacos v2.0.3 on nacos_standlone with PID 1 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
+2022-01-11 22:31:28,797 INFO Starting Nacos v2.0.3 on nacos_standlone with PID 1 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
 
-2021-12-02 08:56:26,857 INFO The following profiles are active: standalone
+2022-01-11 22:31:28,807 INFO The following profiles are active: standalone
 
-2021-12-02 08:56:43,731 INFO Starting Nacos v2.0.3 on nacos_standlone with PID 1 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
+2022-01-11 22:31:33,779 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@76f10035' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2021-12-02 08:56:43,733 INFO The following profiles are active: standalone
+2022-01-11 22:31:33,787 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
-2021-12-02 08:56:58,656 INFO Starting Nacos v2.0.3 on nacos_standlone with PID 1 (/home/nacos/target/nacos-server.jar started by root in /home/nacos)
+2022-01-11 22:31:34,223 INFO Tomcat initialized with port(s): 8848 (http)
 
-2021-12-02 08:56:58,658 INFO The following profiles are active: standalone
+2022-01-11 22:31:34,274 INFO Starting service [Tomcat]
 
-2021-12-02 08:57:45,483 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@721eb7df' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 22:31:34,276 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
 
-2021-12-02 08:57:45,492 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-11 22:31:34,627 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 
-2021-12-02 08:57:45,902 INFO Tomcat initialized with port(s): 8848 (http)
+2022-01-11 22:31:34,675 INFO Initializing Spring embedded WebApplicationContext
 
-2021-12-02 08:57:45,948 INFO Starting service [Tomcat]
+2022-01-11 22:31:34,677 INFO Root WebApplicationContext: initialization completed in 5732 ms
 
-2021-12-02 08:57:45,950 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-01-11 22:31:35,082 INFO HikariPool-1 - Starting...
 
-2021-12-02 08:57:46,246 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-
-2021-12-02 08:57:46,301 INFO Initializing Spring embedded WebApplicationContext
-
-2021-12-02 08:57:46,302 INFO Root WebApplicationContext: initialization completed in 22583 ms
-
-2021-12-02 08:57:46,670 INFO HikariPool-1 - Starting...
-
-2021-12-02 08:57:51,876 ERROR HikariPool-1 - Exception during pool initialization.
+2022-01-11 22:31:40,324 ERROR HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
@@ -149,13 +141,13 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilter(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilter(<generated>)
 	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.CGLIB$authFilterRegistration$1(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70$$FastClassBySpringCGLIB$$1214322e.invoke(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.CGLIB$authFilterRegistration$0(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03$$FastClassBySpringCGLIB$$498b5f79.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilterRegistration(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilterRegistration(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,9 +234,9 @@ Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'nacos_config'
 	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
 	... 186 common frames omitted
-2021-12-02 08:57:51,905 INFO HikariPool-1 - Starting...
+2022-01-11 22:31:40,352 INFO HikariPool-1 - Starting...
 
-2021-12-02 08:57:56,921 ERROR HikariPool-1 - Exception during pool initialization.
+2022-01-11 22:31:45,367 ERROR HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
@@ -366,13 +358,13 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilter(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilter(<generated>)
 	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.CGLIB$authFilterRegistration$1(<generated>)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70$$FastClassBySpringCGLIB$$1214322e.invoke(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.CGLIB$authFilterRegistration$0(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03$$FastClassBySpringCGLIB$$498b5f79.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
 	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
-	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$a899fe70.authFilterRegistration(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$9a4cdd03.authFilterRegistration(<generated>)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -459,26 +451,26 @@ Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'nacos_config'
 	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
 	... 187 common frames omitted
-2021-12-02 08:57:57,413 INFO Nacos-related cluster resource initialization
+2022-01-11 22:31:45,853 INFO Nacos-related cluster resource initialization
 
-2021-12-02 08:57:57,428 INFO The cluster resource is initialized
+2022-01-11 22:31:45,872 INFO The cluster resource is initialized
 
-2021-12-02 08:57:57,478 INFO Get Distro config from env, DistroConfig{syncDelayMillis=1000, syncTimeoutMillis=3000, syncRetryDelayMillis=3000, verifyIntervalMillis=5000, verifyTimeoutMillis=3000, loadDataRetryDelayMillis=30000}
+2022-01-11 22:31:45,921 INFO Get Distro config from env, DistroConfig{syncDelayMillis=1000, syncTimeoutMillis=3000, syncRetryDelayMillis=3000, verifyIntervalMillis=5000, verifyTimeoutMillis=3000, loadDataRetryDelayMillis=30000}
 
-2021-12-02 08:57:58,061 INFO Reflections took 62 ms to scan 1 urls, producing 5 keys and 10 values 
+2022-01-11 22:31:46,485 INFO Reflections took 53 ms to scan 1 urls, producing 5 keys and 10 values 
 
-2021-12-02 08:57:58,112 INFO Reflections took 7 ms to scan 1 urls, producing 4 keys and 23 values 
+2022-01-11 22:31:46,525 INFO Reflections took 7 ms to scan 1 urls, producing 4 keys and 23 values 
 
-2021-12-02 08:57:58,133 INFO Reflections took 3 ms to scan 1 urls, producing 5 keys and 19 values 
+2022-01-11 22:31:46,541 INFO Reflections took 4 ms to scan 1 urls, producing 5 keys and 19 values 
 
-2021-12-02 08:57:58,149 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
+2022-01-11 22:31:46,553 INFO Reflections took 2 ms to scan 1 urls, producing 2 keys and 12 values 
 
-2021-12-02 08:57:58,368 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memoryMonitor' defined in URL [jar:file:/home/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-config-2.0.3.jar!/com/alibaba/nacos/config/server/monitor/MemoryMonitor.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncNotifyService': Unsatisfied dependency expressed through field 'dumpService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalDumpService': Invocation of init method failed; nested exception is ErrCode:500, ErrMsg:Nacos Server did not start because dumpservice bean construction failure :
+2022-01-11 22:31:46,773 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memoryMonitor' defined in URL [jar:file:/home/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-config-2.0.3.jar!/com/alibaba/nacos/config/server/monitor/MemoryMonitor.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncNotifyService': Unsatisfied dependency expressed through field 'dumpService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalDumpService': Invocation of init method failed; nested exception is ErrCode:500, ErrMsg:Nacos Server did not start because dumpservice bean construction failure :
 No DataSource set
 
-2021-12-02 08:57:58,377 INFO Stopping service [Tomcat]
+2022-01-11 22:31:46,782 INFO Stopping service [Tomcat]
 
-2021-12-02 08:57:58,382 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.event.ServerConfigChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,787 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.event.ServerConfigChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -486,7 +478,7 @@ No DataSource set
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:117)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95)
 
-2021-12-02 08:57:58,384 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.config.server.timer.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,789 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.config.server.timer.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -497,7 +489,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,386 WARN The web application [nacos] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,792 WARN The web application [nacos] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -508,7 +500,7 @@ No DataSource set
  org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,388 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,794 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -519,7 +511,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,389 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,795 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -530,7 +522,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,391 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,797 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -541,7 +533,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,393 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,799 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -552,7 +544,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,395 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,800 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -563,7 +555,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,397 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,801 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -574,7 +566,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,399 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,802 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -585,7 +577,7 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,402 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,804 WARN The web application [nacos] appears to have started a thread named [I/O dispatcher 8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
  sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
  sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
@@ -596,13 +588,13 @@ No DataSource set
  org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,403 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.core.cluster.MembersChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,805 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.core.cluster.MembersChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:55)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:109)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95)
 
-2021-12-02 08:57:58,405 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,806 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -613,13 +605,13 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,407 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.naming.consistency.ValueChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,807 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.naming.consistency.ValueChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:55)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:109)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95)
 
-2021-12-02 08:57:58,409 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,808 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -630,7 +622,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,411 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,809 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.net.PlainDatagramSocketImpl.receive0(Native Method)
  java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
  java.net.DatagramSocket.receive(DatagramSocket.java:812)
@@ -643,7 +635,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,413 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,810 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -654,7 +646,18 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,415 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,811 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+
+2022-01-11 22:31:46,812 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -665,25 +668,14 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,417 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
- java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
- java.lang.Thread.run(Thread.java:748)
-
-2021-12-02 08:57:58,419 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,813 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.net.PlainDatagramSocketImpl.receive0(Native Method)
  java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
  java.net.DatagramSocket.receive(DatagramSocket.java:812)
  com.alibaba.nacos.naming.push.UdpPushService$Receiver.run(UdpPushService.java:431)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,423 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.retransmitter.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,814 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.push.retransmitter.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -694,7 +686,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,426 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.core.distributed.distro.task.delay.DistroDelayTaskExecuteEngine.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,815 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.core.distributed.distro.task.delay.DistroDelayTaskExecuteEngine.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -705,63 +697,63 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,428 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,816 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,430 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,817 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,432 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,818 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,434 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,819 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,437 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,821 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,439 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,823 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,441 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,824 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,443 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,825 WARN The web application [nacos] appears to have started a thread named [DistroExecuteTaskExecuteEngine] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:114)
 
-2021-12-02 08:57:58,445 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.notifier.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,827 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.distro.notifier.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -775,7 +767,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,448 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.worker.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,828 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.worker.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -786,7 +778,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,450 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.update.processor.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,829 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.update.processor.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -801,7 +793,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,452 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.empty.auto-clean.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,831 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.service.empty.auto-clean.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -812,7 +804,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,454 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.naming.core.v2.upgrade.UpgradeStates$UpgradeStateChangedEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,832 WARN The web application [nacos] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.naming.core.v2.upgrade.UpgradeStates$UpgradeStateChangedEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -820,7 +812,7 @@ No DataSource set
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:117)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:95)
 
-2021-12-02 08:57:58,457 WARN The web application [nacos] appears to have started a thread named [DoubleWriteDelayTaskEngine.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,833 WARN The web application [nacos] appears to have started a thread named [DoubleWriteDelayTaskEngine.0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -831,7 +823,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,460 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,834 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -842,7 +834,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,465 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,835 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -853,7 +845,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,467 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,836 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -864,7 +856,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,469 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,837 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -875,7 +867,7 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,472 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2022-01-11 22:31:46,838 WARN The web application [nacos] appears to have started a thread named [com.alibaba.nacos.naming.timer.11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -886,13 +878,13 @@ No DataSource set
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
 
-2021-12-02 08:57:58,480 INFO Nacos Log files: /home/nacos/logs
+2022-01-11 22:31:46,843 INFO Nacos Log files: /home/nacos/logs
 
-2021-12-02 08:57:58,481 INFO Nacos Log files: /home/nacos/conf
+2022-01-11 22:31:46,844 INFO Nacos Log files: /home/nacos/conf
 
-2021-12-02 08:57:58,482 INFO Nacos Log files: /home/nacos/data
+2022-01-11 22:31:46,845 INFO Nacos Log files: /home/nacos/data
 
-2021-12-02 08:57:58,484 ERROR Startup errors : 
+2022-01-11 22:31:46,846 ERROR Startup errors : 
 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memoryMonitor' defined in URL [jar:file:/home/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-config-2.0.3.jar!/com/alibaba/nacos/config/server/monitor/MemoryMonitor.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncNotifyService': Unsatisfied dependency expressed through field 'dumpService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalDumpService': Invocation of init method failed; nested exception is ErrCode:500, ErrMsg:Nacos Server did not start because dumpservice bean construction failure :
 No DataSource set
@@ -983,27 +975,27 @@ Caused by: java.lang.IllegalStateException: No DataSource set
 	at com.alibaba.nacos.config.server.service.dump.DumpService.dumpConfigInfo(DumpService.java:293)
 	at com.alibaba.nacos.config.server.service.dump.DumpService.dumpOperate(DumpService.java:205)
 	... 61 common frames omitted
-2021-12-02 08:58:00,022 WARN [WatchFileCenter] start close
+2022-01-11 22:31:48,373 WARN [WatchFileCenter] start close
 
-2021-12-02 08:58:00,025 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/data/tps
+2022-01-11 22:31:48,376 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/data/tps
 
-2021-12-02 08:58:00,026 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/conf
+2022-01-11 22:31:48,377 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/conf
 
-2021-12-02 08:58:00,027 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/data/loader
+2022-01-11 22:31:48,379 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /home/nacos/data/loader
 
-2021-12-02 08:58:00,028 WARN [WatchFileCenter] already closed
+2022-01-11 22:31:48,380 WARN [WatchFileCenter] already closed
 
-2021-12-02 08:58:00,029 WARN [NotifyCenter] Start destroying Publisher
+2022-01-11 22:31:48,381 WARN [NotifyCenter] Start destroying Publisher
 
-2021-12-02 08:58:00,030 WARN [NotifyCenter] Destruction of the end
+2022-01-11 22:31:48,381 WARN [NotifyCenter] Destruction of the end
 
-2021-12-02 08:58:00,031 ERROR Nacos failed to start, please see /home/nacos/logs/nacos.log for more details.
+2022-01-11 22:31:48,382 ERROR Nacos failed to start, please see /home/nacos/logs/nacos.log for more details.
 
-2021-12-02 08:58:00,047 INFO 
+2022-01-11 22:31:48,396 INFO 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 
-2021-12-02 08:58:00,052 ERROR Application run failed
+2022-01-11 22:31:48,399 ERROR Application run failed
 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memoryMonitor' defined in URL [jar:file:/home/nacos/target/nacos-server.jar!/BOOT-INF/lib/nacos-config-2.0.3.jar!/com/alibaba/nacos/config/server/monitor/MemoryMonitor.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'asyncNotifyService': Unsatisfied dependency expressed through field 'dumpService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalDumpService': Invocation of init method failed; nested exception is ErrCode:500, ErrMsg:Nacos Server did not start because dumpservice bean construction failure :
 No DataSource set

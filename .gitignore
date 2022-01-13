@@ -8,3 +8,5 @@ zookeeper/zoo3/
 redis/data
 nginx/logs
 mysql-cluster/*/data
+redis-cluster/node*
+nacos/standalone-logs

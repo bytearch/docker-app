@@ -31,6 +31,7 @@ Gateway: 172.30.1.1
 | Cadvisor | 172.30.1.56 | Docker服务监控数据采集 |
 | Grafana | 172.30.1.57 | 监控展示 |
 | Skywalking       | server: 172.30.1.58    web: 172.30.1.59               |             链路追踪          |
+|redis-cluster|172.30.1.61,172.30.1.62,172.30.1.63 172.30.1.64,172.30.1.65,172.30.1.66|redis-cluster集群|
 
 Other software services will be supplemented in succession
 

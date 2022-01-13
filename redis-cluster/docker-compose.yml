@@ -1,0 +1,167 @@
+
+# redis-cli -a pass.bytearch --cluster create 172.30.1.61:6379 172.30.1.62:6379 172.30.1.63:6379 172.30.1.64:6379 172.30.1.65:6379 172.30.1.66:6379 --cluster-replicas 1
+version: '3.5'
+services:
+  # 节点1
+  redis1:
+    # 启动之后的容器名称
+    container_name: redis-node-1
+    env_file: 
+      # 环境配置
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis1_ports}
+    #  - ${redis1_cluster}
+    networks:
+        default:
+          ipv4_address: 172.30.1.61
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node1/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment: 
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点2
+  redis2:
+    container_name: redis-node-2
+    env_file: 
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis2_ports}
+    #  - ${redis2_cluster}
+    networks:
+        default:
+          ipv4_address: 172.30.1.62
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node2/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件  
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment: 
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点3
+  redis3:
+    container_name: redis-node-3
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis3_ports}
+    #  - ${redis3_cluster}
+    networks:
+        default:
+          ipv4_address: 172.30.1.63
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node3/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点4
+  redis4:
+    container_name: redis-node-4
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis4_ports}
+    #  - ${redis4_cluster}
+    networks:
+        default:
+          ipv4_address: 172.30.1.64
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node4/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点5
+  redis5:
+    container_name: redis-node-5
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis5_ports}
+    #  - ${redis5_cluster}
+    networks:
+        default:
+          ipv4_address: 172.30.1.65
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node5/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点6
+  redis6:
+    container_name: redis-node-6
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    #ports:
+    #  - ${redis6_ports}
+    #  - ${redis6_cluster}
+    networks:
+         default:
+          ipv4_address: 172.30.1.66
+    volumes:
+      # 容器的data映射到宿主机
+      - ./node6/data:/data
+      # 加载配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  redis-cluster-creator:
+    image: 'redis:5.0.4'
+    entrypoint: [/bin/sh,-c,'echo "yes" | redis-cli --cluster create 172.30.1.61:6379 172.30.1.62:6379 172.30.1.63:6379 172.30.1.64:6379 172.30.1.65:6379 172.30.1.66:6379 --cluster-replicas 1']
+    depends_on:
+      - redis1
+      - redis2
+      - redis3
+      - redis4
+      - redis5
+      - redis6
+    networks:
+        default:
+          ipv4_address: 172.30.1.60
+networks:
+   default:
+    external:
+      name: app-network
